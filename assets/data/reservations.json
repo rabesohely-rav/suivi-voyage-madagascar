@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Hôtel Tana Centre",
+    "date": "2026-07-09",
+    "location": "Antananarivo",
+    "details": "Check-in 14h • Réservation confirmée",
+    "category": "Hébergement"
+  },
+  {
+    "title": "Transfert aéroport",
+    "date": "2026-07-10",
+    "location": "Ivato",
+    "details": "Chauffeur confirmé",
+    "category": "Transport"
+  }
+]

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1f5e87" />
+  <title>Convertisseur • Suivi Voyage Madagascar</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-page="convertisseur">
+  <header class="topbar compact-topbar">
+    <a class="back-link" href="../index.html">← Accueil</a>
+    <h1>Convertisseur</h1>
+    <p class="muted">Conversion rapide € ↔ Ariary avec dernier taux mémorisé.</p>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <h2>Taux de change</h2>
+      <p id="rateStatus" class="muted">Chargement du taux…</p>
+      <div class="quick-actions">
+        <button id="refreshRateButton" class="button" type="button">Mettre à jour le taux</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Euro vers Ariary</h2>
+      <label class="field-label" for="eurInput">Montant en euro</label>
+      <input id="eurInput" class="input" type="number" step="0.01" min="0" placeholder="0,00" />
+      <p id="eurToMgaResult" class="result-box">—</p>
+    </section>
+
+    <section class="card">
+      <h2>Ariary vers Euro</h2>
+      <label class="field-label" for="mgaInput">Montant en Ariary</label>
+      <input id="mgaInput" class="input" type="number" step="1" min="0" placeholder="0" />
+      <p id="mgaToEurResult" class="result-box">—</p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigation secondaire">
+    <a href="../index.html">Accueil</a>
+    <a href="depenses.html">Dépenses</a>
+    <a class="is-active" href="convertisseur.html">Convertisseur</a>
+  </nav>
+
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/convertisseur.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1f5e87" />
+  <title>Dépenses • Suivi Voyage Madagascar</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-page="depenses">
+  <header class="topbar compact-topbar">
+    <a class="back-link" href="../index.html">← Accueil</a>
+    <h1>Dépenses</h1>
+    <p class="muted">Suivi local, léger et rapide pour usage terrain.</p>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <h2>Saisie rapide</h2>
+      <div class="stack">
+        <div>
+          <label class="field-label" for="quickDate">Date</label>
+          <input id="quickDate" class="input" type="date" />
+        </div>
+        <div>
+          <label class="field-label" for="quickLabel">Dépense</label>
+          <input id="quickLabel" class="input" type="text" placeholder="Ex. carburant, hôtel, repas" />
+        </div>
+        <div>
+          <label class="field-label" for="quickAmount">Montant (€)</label>
+          <input id="quickAmount" class="input" type="number" step="0.01" min="0" placeholder="0,00" />
+        </div>
+        <button id="addExpenseButton" class="button primary" type="button">Ajouter une dépense</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Actions</h2>
+      <div class="quick-actions">
+        <button id="toggleCurrencyButton" class="button" type="button">Basculer € / Ariary</button>
+        <button id="exportButton" class="button" type="button">Exporter les données</button>
+        <button id="resetButton" class="button danger" type="button">Réinitialiser</button>
+      </div>
+      <p id="saveStatus" class="muted">Stockage local actif.</p>
+      <p id="rateInfo" class="muted">Devise affichée : EUR</p>
+    </section>
+
+    <section class="card">
+      <h2>Tableau des dépenses</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Dépense</th>
+              <th id="amountHeader">Montant €</th>
+              <th>Statut</th>
+              <th id="withdrawalHeader">Retraits €</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"><strong>Totaux</strong></td>
+              <td id="totalAmount">0,00 €</td>
+              <td id="totalPaid">Payé : 0,00 €</td>
+              <td id="totalWithdrawal">0,00 €</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigation secondaire">
+    <a href="../index.html">Accueil</a>
+    <a class="is-active" href="depenses.html">Dépenses</a>
+    <a href="convertisseur.html">Convertisseur</a>
+  </nav>
+
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/depenses.js"></script>
+</body>
+</html>

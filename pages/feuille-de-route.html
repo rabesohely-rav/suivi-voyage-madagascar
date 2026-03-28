@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feuille de route • Suivi Voyage Madagascar</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-page="feuille-de-route">
+  <header class="topbar compact-topbar">
+    <a class="back-link" href="../index.html">← Accueil</a>
+    <h1>Feuille de route</h1>
+    <p class="muted">Consultation rapide par journée avec notes personnelles locales.</p>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <h2>Recherche</h2>
+      <input id="routeSearchInput" class="input" type="search" placeholder="Rechercher un lieu, une activité, un contact…" />
+    </section>
+
+    <section class="card">
+      <h2>Journées</h2>
+      <div id="roadmapList" class="list">
+        <p class="muted">Chargement de la feuille de route…</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/feuille-de-route.js"></script>
+</body>
+</html>

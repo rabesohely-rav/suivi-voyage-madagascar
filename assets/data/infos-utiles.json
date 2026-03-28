@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Urgence médicale",
+    "value": "117",
+    "category": "Urgence"
+  },
+  {
+    "title": "Contact chauffeur",
+    "value": "+261 34 00 000 00",
+    "category": "Transport"
+  },
+  {
+    "title": "Ambassade",
+    "value": "Adresse et numéro à compléter",
+    "category": "Administratif"
+  }
+]

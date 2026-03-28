@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1f5e87" />
+  <title>Suivi Voyage Madagascar</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="accueil">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Voyage Madagascar</p>
+      <h1>Tableau de bord</h1>
+      <p id="todayLabel" class="muted">Chargement de la date…</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <h2>Navigation principale</h2>
+      <nav class="grid-nav" aria-label="Navigation principale">
+        <a class="nav-tile" href="pages/convertisseur.html">Convertisseur</a>
+        <a class="nav-tile" href="pages/depenses.html">Dépenses</a>
+        <a class="nav-tile" href="pages/feuille-de-route.html">Feuille de route</a>
+        <a class="nav-tile" href="pages/reservations.html">Réservations</a>
+        <a class="nav-tile" href="pages/agenda.html">Agenda</a>
+        <a class="nav-tile" href="pages/infos-utiles.html">Infos utiles</a>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h2>Accès rapide</h2>
+      <div class="quick-actions">
+        <a class="button" href="pages/convertisseur.html">Ouvrir le convertisseur</a>
+        <a class="button primary" href="pages/depenses.html">Ajouter une dépense</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Récapitulatif du jour</h2>
+      <div id="dailySummary" class="stack">
+        <p class="muted">Aucun résumé configuré pour le moment.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Météo locale</h2>
+      <div id="weatherWidget" class="stack">
+        <p class="muted">Widget météo à brancher plus tard. Hors ligne, cette zone reste informative.</p>
+      </div>
+    </section>
+
+    <section class="card two-col-grid">
+      <div>
+        <h2>Aperçu budget</h2>
+        <div id="budgetPreview" class="stack">
+          <p class="muted">Chargement du budget…</p>
+        </div>
+      </div>
+      <div>
+        <h2>Prochain événement</h2>
+        <div id="nextEvent" class="stack">
+          <p class="muted">Chargement…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Prochaine réservation</h2>
+      <div id="nextReservation" class="stack">
+        <p class="muted">Chargement…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Usage terrain • mobile-first • léger • robuste avec connexion limitée</p>
+  </footer>
+
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

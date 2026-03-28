@@ -1,0 +1,299 @@
+:root {
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #1f5e87;
+  --primary-dark: #174766;
+  --danger: #b42318;
+  --success: #0f7b36;
+  --border: #d6dde6;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --radius: 14px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 20px;
+  --space-5: 24px;
+  --max-width: 920px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.topbar,
+.page,
+.footer {
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.topbar {
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-2);
+}
+
+.compact-topbar {
+  padding-bottom: 0;
+}
+
+.page {
+  padding-bottom: 88px;
+}
+
+.footer {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-5);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 1.08rem;
+  margin-bottom: 12px;
+}
+
+.eyebrow {
+  margin-bottom: 6px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+.nav-tile {
+  display: block;
+  padding: 16px;
+  border-radius: 12px;
+  background: #eef5fb;
+  border: 1px solid #d7e5f2;
+  font-weight: 700;
+  text-align: center;
+}
+
+.quick-actions,
+.stack,
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #eaf2f8;
+  border: 1px solid #cfe0ec;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.primary {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.button.danger {
+  background: var(--danger);
+  color: #fff;
+  border-color: var(--danger);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bcc8d6;
+  border-radius: 10px;
+  background: #fffef8;
+}
+
+.result-box {
+  margin: 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #eef5fb;
+  border: 1px solid #d7e5f2;
+  font-weight: 700;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px 8px;
+  vertical-align: middle;
+}
+
+th {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+}
+
+td {
+  background: #fff;
+}
+
+.list-item,
+.roadmap-card {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fafcff;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #eef5fb;
+}
+
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bottom-nav a {
+  padding: 12px 8px;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.bottom-nav a.is-active {
+  color: var(--primary);
+}
+
+.status-paid {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.status-unpaid {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.small-note {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.55rem;
+  }
+
+  .grid-nav,
+  .two-col-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  table {
+    min-width: 560px;
+  }
+}

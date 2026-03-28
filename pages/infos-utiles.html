@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infos utiles • Suivi Voyage Madagascar</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-page="infos-utiles">
+  <header class="topbar compact-topbar">
+    <a class="back-link" href="../index.html">← Accueil</a>
+    <h1>Infos utiles</h1>
+    <p class="muted">Contacts, urgences, adresses et informations pratiques.</p>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <h2>Recherche</h2>
+      <input id="infoSearchInput" class="input" type="search" placeholder="Rechercher un contact, une adresse, une urgence…" />
+    </section>
+
+    <section class="card">
+      <h2>Liste</h2>
+      <div id="infosList" class="list">
+        <p class="muted">Chargement des informations utiles…</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/infos-utiles.js"></script>
+</body>
+</html>
